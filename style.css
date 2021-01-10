@@ -8,11 +8,14 @@ main{
     max-width: 90%;
     margin: 20px auto;
 }
+.section-title{
+    margin-top: 5%;
+}
 .top-player, .top-blog{
     display: grid;
     place-items: center;
     grid-gap: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .top-player{
     grid-template-columns: repeat(3, 1fr);
@@ -41,9 +44,19 @@ main{
     .top-player{
         grid-template-columns: repeat(2, 1fr);
     }
+    .top-blog{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
 }
 @media(max-width:668px){
     .top-player{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .top-blog{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .article-blog{
+        display: block;
     }
 }
